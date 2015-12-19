@@ -45,7 +45,13 @@ var App = React.createClass({
           autoCorrect='false'
           placeholder='Enter a chat message...'
           returnKeyType='send'
-          style={{height: 40, borderColor: 'gray', borderWidth: 1, margin: 10}}
+          style={{
+            height: 40,
+            borderColor: 'gray',
+            borderWidth: 1,
+            margin: 10,
+            padding: 5
+          }}
           onSubmitEditing={this.handleSubmit.bind(this)}
         />
         <ScrollView style={{height: 400}}>
