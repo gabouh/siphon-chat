@@ -16,7 +16,7 @@ var App = React.createClass({
     }
   },
   componentDidMount: function() {
-    this.ws = new WebSocket('ws://siphon-chat.herokuapp.com');
+    this.ws = new WebSocket('wss://siphon-chat.herokuapp.com');
     this.ws.onmessage = function(event) {
       if (event.data != 'ping') {
         this.setState({
