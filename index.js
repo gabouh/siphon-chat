@@ -42,7 +42,7 @@ var App = React.createClass({
         <TextInput
           ref='textInput'
           autoCapitalize='none'
-          autoCorrect='false'
+          autoCorrect={ false }
           placeholder='Enter a chat message...'
           returnKeyType='send'
           style={{
