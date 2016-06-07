@@ -52,12 +52,12 @@ var App = React.createClass({
             margin: 10,
             padding: 5
           }}
-          onSubmitEditing={this.handleSubmit.bind(this)}
+          onSubmitEditing={this.handleSubmit}
         />
         <ScrollView style={{height: 400}}>
           {
-            this.state.messages.map(m => {
-              return <Text style={{margin: 10}}>{m}</Text>
+            this.state.messages.map((m, i) => {
+              return <Text style={{margin: 10}} key={i.toString()}>{m}</Text>
             })
           }
         </ScrollView>
